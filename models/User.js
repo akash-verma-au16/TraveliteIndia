@@ -27,11 +27,7 @@ const UserSchema = new mongoose.Schema({
     minlength: 6,
     select: false,
   },
-  myTours: [
-    {
-      tourId: String,
-    },
-  ],
+  myTours: [],
   createdAt: {
     type: Date,
     default: Date.now,

@@ -17,11 +17,7 @@ exports.getUser = asyncHandler(async (req, res, next) => {
     data.useremail = req.user.email;
     data.id = req.user._id;
     data.userrole = req.user.role;
-    data.myTours = [];
-
-    req.user.myTours.forEach(async (tour) => {
-      data.myTours.push(await Tour.findById(tour.tourId));
-    });
+    data.myTours = req.user.myTours;
   }
 
   res.render('profile', data);

@@ -57,7 +57,7 @@ ReviewSchema.statics.getAverageRating = async function (tourId) {
 
   try {
     await this.model('Tour').findByIdAndUpdate(tourId, {
-      averageRating: obj[0].averageRating,
+      averageRating: obj[0].averageRating.toFixed(2),
     });
   } catch (err) {
     console.error(err);

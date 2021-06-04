@@ -327,7 +327,7 @@ exports.payment = asyncHandler(async (req, res, next) => {
     tour.save();
 
     const user = await User.findById(req.user._id);
-    user.myTours.push({ tourId: req.params.id });
+    user.myTours.push(tour);
     await user.save();
 
     res.redirect(`/users/${req.user.id}`);
