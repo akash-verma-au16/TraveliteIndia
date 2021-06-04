@@ -3,3 +3,4 @@ config/config.env
 seeder.js
 node_modules/
 public/.DS_Store
+.vscode/
