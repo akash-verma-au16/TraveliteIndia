@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>html_headers}}
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-between">
+        <div style="min-height: 80vh;">
+            {{>nav}}
+            <h4 class="text-center my-3 text-primary fw-bold">ABOUT DEVELOPERS</h4>
+            <hr>
+            <div class="container d-flex my-3">
+                <div class="card p-3 w-50 mx-3" style="background-color: goldenrod;">
+                    <img src="/uploads/akash.jpg" class="img-thumbnail rounded-circle m-auto" alt="..." style="max-width: 200px;">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-danger">Akash Verma</h4>
+                        <hr>
+                        <p class="card-text d-flex  text-center">
+                            <span class="w-50 fw-bold">Batch:</span>
+                            <span class="text-light w-50">Subramanyam</span>
+                        </p>
+                        <p class="card-text d-flex  text-center">
+                            <span class="w-50 fw-bold">Project:</span>
+                            <span class="text-light w-50">Backend Project</span>
+                        </p>
+                        <p class="card-text d-flex  text-center">
+                            <span class="w-50 fw-bold">Bio:</span>
+                            <span class="text-light w-50">Make your own choices or they will be made for you.✌️</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card p-3 w-50 mx-3" style="background-color: goldenrod;">
+                    <img src="/uploads/yuvraj.jpg" class="img-thumbnail rounded-circle m-auto" alt="..." style="max-width: 200px;">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-danger">Yuvraj Singh Yaduvanshi</h4>
+                        <hr>
+                        <p class="card-text d-flex  text-center">
+                            <span class="w-50 fw-bold">Batch:</span>
+                            <span class="text-light w-50">Subramanyam</span>
+                        </p>
+                        <p class="card-text d-flex  text-center">
+                            <span class="w-50 fw-bold">Project:</span>
+                            <span class="text-light w-50">Backend Project</span>
+                        </p>
+                        <p class="card-text d-flex  text-center">
+                            <span class="w-50 fw-bold">Bio:</span>
+                            <span class="text-light w-50">Rest at the end, not in the middle.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            {{>home_footer}}
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

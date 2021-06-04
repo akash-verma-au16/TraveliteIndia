@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>html_headers}}
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-between">
+        <div style="min-height: 80vh;">
+            {{>nav}}
+            <h4 class="container text-center text-primary my-3">IMPORTANT LINKS </h4>
+            <hr>
+            <ul class="list-group container mt-5">
+                <li class="list-group-item p-0">
+                    <a
+                        href="https://github.com/attainu/backend-project-Yuvraj-Yaduwansi-AU16"
+                        class="nav-link text-center py-3"
+                        style="background-color: darkslategrey;"
+                        target="_blank"
+                    >
+                        GitHub Repo
+                    </a>
+                </li>
+                <li class="list-group-item p-0 mt-1">
+                    <a
+                        href="https://docs.google.com/document/d/1YOJrfXC3j978lFZloKyCM67x6L1Gpa8t"
+                        class="nav-link text-center py-3"
+                        style="background-color: darkslategrey;"
+                        target="_blank"
+                    >
+                        Documentation
+                    </a>
+                </li>
+                <li class="list-group-item p-0 mt-1">
+                    <a
+                        href="https://travelite-india.herokuapp.com/contact"
+                        class="nav-link text-center py-3"
+                        style="background-color: darkslategrey;"
+                        target="_blank"
+                    >
+                        Contact Us
+                    </a>
+                </li>
+                <li class="list-group-item p-0 mt-1">
+                    <a
+                        href="https://travelite-india.herokuapp.com/about"
+                        class="nav-link text-center py-3"
+                        style="background-color: darkslategrey;"
+                        target="_blank"
+                    >
+                        About Developers
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            {{>home_footer}}
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -71,3 +71,21 @@ exports.newAgencyUI = asyncHandler(async (req, res, next) => {
   res.render('new_agency', data);
   res.cookie('error', 'empty');
 });
+
+// GET /about
+exports.about = asyncHandler(async (req, res, next) => {
+  res.render('about');
+  res.cookie('error', 'empty');
+});
+
+// GET /contact
+exports.contactUs = asyncHandler(async (req, res, next) => {
+  res.render('contact');
+  res.cookie('error', 'empty');
+});
+
+// GET /links
+exports.links = asyncHandler(async (req, res, next) => {
+  res.render('links');
+  res.cookie('error', 'empty');
+});
