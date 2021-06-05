@@ -24,7 +24,7 @@ exports.getUser = asyncHandler(async (req, res, next) => {
   res.cookie('error', 'empty');
 });
 
-// GET /users/:id/deleteTour
+// PUT /users/:id/deleteTour
 exports.deleteTour = asyncHandler(async (req, res, next) => {
   let user;
 
