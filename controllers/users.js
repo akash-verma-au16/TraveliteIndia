@@ -30,10 +30,9 @@ exports.deleteTour = asyncHandler(async (req, res, next) => {
 
   if (req.user) {
     user = await User.findById(req.user._id);
-    user.myTours = user.myTours.filter((tour) => tour.tourId !== req.params.id);
+    user.myTours = user.myTours.filter((tour) => tour._id !== req.params.id);
     await user.save();
   }
-  user = await User.findById(req.user._id);
   res.send();
 });
 
