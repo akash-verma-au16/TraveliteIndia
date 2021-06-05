@@ -12,6 +12,6 @@ document.querySelectorAll('#unsubscribe').forEach((btn) => {
     axios.put(`/users/${tourId}/deleteTour`);
     axios.put(`/tours/${tourId}/seats`, { seats: parseInt(seats) + 1 });
 
-    setTimeout(() => window.location.replace(`/users/${userId}`), 100);
+    setTimeout(() => window.location.replace(`/users/${userId}`), 500);
   });
 });
