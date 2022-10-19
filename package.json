@@ -4,7 +4,7 @@
   "description": "Backend Project",
   "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=production node server",
+    "start": "node server",
     "dev": "nodemon server -e hbs,js"
   },
   "author": "Akash Verma And Yuvraj Yaduvanshi",
