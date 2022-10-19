@@ -1,5 +1,6 @@
 const hbs = require('hbs');
 const express = require('express');
+const cors = require('cors');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const colors = require('colors');
@@ -37,6 +38,9 @@ hbs.registerHelper('ifnoteq', function (a, b, options) {
 
 // Set static folder
 app.use(express.static('./public'));
+
+// CORS
+app.use(cors());
 
 // Body parser
 app.use(express.json());
